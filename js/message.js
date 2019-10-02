@@ -43,6 +43,21 @@
         showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
     });
 
+    // region 自定义按钮
+    $('.waifu-tool .icon-home').on('click', function() {
+        window.location.href = 'http://www.sunsiquan.top';
+    });
+
+    $('.waifu-tool .icon-bubble2').on('click', function() {
+        showHitokoto();
+    });
+
+    $('.waifu-tool .icon-cross').on('click', function() {
+        showMessage('下次见...（￣︶￣）↗', 1300);
+        window.setTimeout(function() {$('#landlord').hide();}, 1300);
+    });
+    // endregion
+
     function initTips(){
         $.ajax({
             cache: true,
@@ -146,16 +161,5 @@
         }
     }
 
-    function initLive2d (){
-        $('.hide-button').fadeOut(0).on('click', () => {
-            $('#landlord').css('display', 'none')
-        })
-        $('#landlord').hover(() => {
-            $('.hide-button').fadeIn(600)
-        }, () => {
-            $('.hide-button').fadeOut(600)
-        })
-    }
-    initLive2d ();
 })(jQuery)
 

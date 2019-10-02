@@ -7,6 +7,18 @@
         {
             "selector": ".searchbox",
             "text": ["在找什么东西呢，需要帮忙吗？"]
+        },
+        {
+            "selector": ".waifu-tool .icon-home",
+            "text": ["回到首页看看吧"]
+        },
+        {
+            "selector": ".waifu-tool .icon-bubble2",
+            "text": ["我有好多话想说"]
+        },
+        {
+            "selector": ".waifu-tool .icon-cross",
+            "text": ["要说再见了吗"]
         }
     ],
     "click": [
