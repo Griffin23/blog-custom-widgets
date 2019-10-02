@@ -103,21 +103,19 @@
             if (window.location.href == `${home_Path}`) { //主页URL判断，需要斜杠结尾
                 var now = (new Date()).getHours();
                 if (now > 23 || now <= 5) {
-                    text = 'night zzz ... ';
+                    text = '夜深了，早点休息吧 (～﹃～)~zZ';
                 } else if (now > 5 && now <= 7) {
-                    text = 'morning ... ';
+                    text = '一日之计在于晨 (*￣∇￣*)';
                 } else if (now > 7 && now <= 11) {
-                    text = 'morning ... ';
+                    text = '好好工作，认真学习 (๑•̀ㅂ•́)و✧加油';
                 } else if (now > 11 && now <= 14) {
-                    text = 'noon ... ';
+                    text = '吃个午饭，休息一下吧';
                 } else if (now > 14 && now <= 17) {
-                    text = 'afternoon ... ';
+                    text = '下午也要加油鸭 (￣▽￣)"';
                 } else if (now > 17 && now <= 19) {
-                    text = 'evening ... ';
-                } else if (now > 19 && now <= 21) {
-                    text = 'night ... ';
-                } else if (now > 21 && now <= 23) {
-                    text = 'night ... ';
+                    text = '夜幕将至，你在想谁？';
+                } else if (now > 19 && now <= 23) {
+                    text = '今天有没有去健身呢 (･ェ･。)';
                 } else {
                     text = 'play with me :)';
                 }
