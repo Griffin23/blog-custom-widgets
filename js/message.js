@@ -87,7 +87,7 @@
 
     (function (){
         var text;
-        if(document.referrer !== ''){
+        if(document.referrer !== '' && document.referrer.indexOf('sunsiquan') == -1){
             var referrer = document.createElement('a');
             referrer.href = document.referrer;
             text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
@@ -122,8 +122,11 @@
                     text = 'play with me :)';
                 }
             }else {
-                // text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
-                text = 'welcome here～'
+                if (document.title.indexOf('-') == -1) {
+                    text = '你好吖！';
+                } else {
+                   text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+                }
             }
         }
         showMessage(text, 12000);

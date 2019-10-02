@@ -1,3 +1,0 @@
-- 修改聊天框样式
-- 本地部署项目，不然ajax会失败（use apache httpd?）
-- TODO 修改隐藏按钮样式
