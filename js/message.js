@@ -22,6 +22,27 @@
         return renderTip(this, context);
     };
 
+    if(getChromeVersion() >= 72){
+        let element = new Image();
+        Object.defineProperty(element, 'id', {
+            get: function () {
+                showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000, true);
+            }
+        });
+        console.log('%c', element);
+    }else{
+        var re = /x/;
+        console.log(re);
+        re.toString = function() {
+            showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000, true);
+            return '';
+        };
+    }
+
+    $(document).on('copy', function (){
+        showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+    });
+
     function initTips(){
         $.ajax({
             cache: true,
@@ -114,6 +135,15 @@
         $('.message').stop().css('opacity',1);
         if (timeout === null) timeout = 5000;
         $('.message').delay(timeout).fadeTo(200, 0);
+    }
+
+    function getChromeVersion(){
+        let match = window.navigator.userAgent.match(/chrome\/(\d+)/i);
+        if(match){
+            return +match[1]
+        }else{
+            return null
+        }
     }
 
     function initLive2d (){
