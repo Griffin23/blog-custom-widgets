@@ -120,10 +120,12 @@
                     text = 'play with me :)';
                 }
             }else {
-                if (document.title.indexOf('-') == -1) {
+                // 某个用于优化的插件，将title里面的-会转换成–
+                // 虽然长得很像，但它们是不同的字符...
+                if (document.title.indexOf('-') === -1 && document.title.indexOf('–') === -1 ) {
                     text = '你好吖！';
                 } else {
-                   text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+                   text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0].split(' – ')[0] + ' 」</span>';
                 }
             }
         }
