@@ -1,0 +1,145 @@
+{
+  "version": "Sample 1.0.0",
+  "model": "moc/Epsilon2.1.moc",
+  "textures": [
+    "moc/Epsilon2.1.2048/texture_00.png"
+  ],
+  "layout": {
+    "center_x": 0.0,
+    "center_y": -0.3,
+    "width": 2.0
+  },
+  "hit_areas_custom": {
+    "head_x": [
+      -0.35,
+      0.8
+    ],
+    "head_y": [
+      0.19,
+      0.05
+    ],
+    "body_x": [
+      -0.3,
+      0
+    ],
+    "body_y": [
+      0.3,
+      -0.9
+    ]
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "mtn/idle.mtn"
+      },
+      {
+        "file": "mtn/yes.mtn"
+      },
+      {
+        "file": "mtn/left_side_head.mtn"
+      },
+      {
+        "file": "mtn/smile_yes.mtn"
+      }
+    ],
+    "sleepy": [
+      {
+        "file": "mtn/smile_yes.mtn"
+      }
+    ],
+    "flick_head": [
+      {
+        "file": "mtn/angry.mtn"
+      },
+      {
+        "file": "mtn/angry_01.mtn"
+      },
+      {
+        "file": "mtn/question_blink.mtn"
+      },
+      {
+        "file": "mtn/sad_01.mtn"
+      },
+      {
+        "file": "mtn/shake_head_shy.mtn"
+      }
+    ],
+    "tap_body": [
+      {
+        "file": "mtn/angry.mtn"
+      },
+      {
+        "file": "mtn/angry_01.mtn"
+      },
+      {
+        "file": "mtn/question_blink.mtn"
+      },
+      {
+        "file": "mtn/question_sad.mtn"
+      },
+      {
+        "file": "mtn/sad_01.mtn"
+      },
+      {
+        "file": "mtn/shake_body_shy.mtn"
+      },
+      {
+        "file": "mtn/shake_head_shy.mtn"
+      },
+      {
+        "file": "mtn/smile.mtn"
+      },
+      {
+        "file": "mtn/no.mtn"
+      }
+    ],
+    "": [
+      {
+        "file": "mtn/idle.mtn"
+      },
+      {
+        "file": "mtn/yes.mtn"
+      },
+      {
+        "file": "mtn/no.mtn"
+      },
+      {
+        "file": "mtn/angry.mtn"
+      },
+      {
+        "file": "mtn/angry_01.mtn"
+      },
+      {
+        "file": "mtn/sad.mtn"
+      },
+      {
+        "file": "mtn/sad_01.mtn"
+      },
+      {
+        "file": "mtn/question_sad.mtn"
+      },
+      {
+        "file": "mtn/question_blink.mtn"
+      },
+      {
+        "file": "mtn/left_side_head.mtn"
+      },
+      {
+        "file": "mtn/shake_body_shy.mtn"
+      },
+      {
+        "file": "mtn/shake_head_shy.mtn"
+      },
+      {
+        "file": "mtn/smile.mtn"
+      },
+      {
+        "file": "mtn/smile_yes.mtn"
+      },
+      {
+        "file": "mtn/wink.mtn"
+      }
+    ]
+  },
+  "physics": "Epsilon2.1.physics.json"
+}
