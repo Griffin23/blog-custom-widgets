@@ -12,7 +12,7 @@
 <!-- Start live2d -->
 
 <!-- Start html part -->
-<div id="landlord" style="bottom:300px">
+<div id="landlord" style="display:none;bottom:300px">
     <div class="message" style="opacity:0"></div>
     <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
     <!-- <div class="hide-button">隐藏</div> -->
@@ -32,10 +32,9 @@
 <script type="text/javascript" src="./js/live2d-custom-util.js"></script>
 <script type="text/javascript">
   if (sessionStorage.getItem('isLive2dClosed') !== '1') {
+      document.getElementById('landlord').style.display = 'block';
       loadlive2d("live2d", "./model/epsilon/Epsilon2.1.model.json");
       // loadlive2d("live2d", "./model/tia/model.json");
-  } else {
-      document.getElementById('landlord').style.display = 'none';
   }
 </script>
 <!-- End live2d -->
