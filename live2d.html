@@ -32,9 +32,9 @@
 <script type="text/javascript" src="./js/live2d-custom-util.js"></script>
 <script type="text/javascript">
   if (sessionStorage.getItem('isLive2dClosed') !== '1') {
-      document.getElementById('landlord').style.display = 'block';
       loadlive2d("live2d", "./model/epsilon/Epsilon2.1.model.json");
       // loadlive2d("live2d", "./model/tia/model.json");
+      document.getElementById('landlord').style.display = 'block';
   }
 </script>
 <!-- End live2d -->
