@@ -54,6 +54,7 @@
 
     $('.waifu-tool .icon-cross').on('click', function() {
         showMessage('下次见...（￣︶￣）↗', 1300);
+        sessionStorage.setItem('isLive2dClosed', '1');
         window.setTimeout(function() {$('#landlord').hide();}, 1300);
     });
     // endregion

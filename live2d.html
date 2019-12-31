@@ -31,8 +31,12 @@
 <script type="text/javascript" src="./js/live2d-sdk.js"></script>
 <script type="text/javascript" src="./js/live2d-custom-util.js"></script>
 <script type="text/javascript">
-    loadlive2d("live2d", "./model/epsilon/Epsilon2.1.model.json");
-    // loadlive2d("live2d", "./model/tia/model.json");
+  if (sessionStorage.getItem('isLive2dClosed') !== '1') {
+      loadlive2d("live2d", "./model/epsilon/Epsilon2.1.model.json");
+      // loadlive2d("live2d", "./model/tia/model.json");
+  } else {
+      document.getElementById('landlord').style.display = 'none';
+  }
 </script>
 <!-- End live2d -->
 </body>
