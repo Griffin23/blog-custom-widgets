@@ -108,17 +108,17 @@
                 } else if (now > 5 && now <= 7) {
                     text = '一日之计在于晨 (*￣∇￣*)';
                 } else if (now > 7 && now <= 11) {
-                    text = '好好工作，认真学习 (๑•̀ㅂ•́)و✧加油';
+                    text = '(๑•̀ㅂ•́)و✧';
                 } else if (now > 11 && now <= 14) {
-                    text = '吃个午饭，休息一下吧';
+                    text = 'ψ(｀∇´)ψ';
                 } else if (now > 14 && now <= 17) {
-                    text = '下午也要加油鸭 (￣▽￣)"';
+                    text = ' (￣▽￣)"';
                 } else if (now > 17 && now <= 19) {
-                    text = '夜幕将至，你在想谁？';
+                    text = '(づ｡◕‿‿◕｡)づ';
                 } else if (now > 19 && now <= 23) {
-                    text = '今天有没有去健身呢 (･ェ･。)';
+                    text = ' (･ェ･。)';
                 } else {
-                    text = 'play with me :)';
+                    text = '(;´▽`)y-~~';
                 }
             }else {
                 // 某个用于优化的插件，将title里面的-会转换成–
