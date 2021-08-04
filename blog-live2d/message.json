@@ -17,6 +17,10 @@
             "text": ["我有好多话想说"]
         },
         {
+            "selector": ".waifu-tool .icon-dance",
+            "text": ["让我们high起来~~Music!"]
+        },
+        {
             "selector": ".waifu-tool .icon-cross",
             "text": ["要说再见了吗"]
         }

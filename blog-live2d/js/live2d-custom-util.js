@@ -52,6 +52,14 @@
         showHitokoto();
     });
 
+    $('.waifu-tool .icon-dance').on('click', function () {
+        // let's get high
+        var d = document, a = 'setAttribute', s = d.createElement('script')
+        s[a]('type', 'text/javascript')
+        s[a]('src', '/wp-includes/live2d/js/high.js')
+        d.head.appendChild(s)
+    })
+
     $('.waifu-tool .icon-cross').on('click', function() {
         showMessage('下次见...（￣︶￣）↗', 1300);
         sessionStorage.setItem('isLive2dClosed', '1');
