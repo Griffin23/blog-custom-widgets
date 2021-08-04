@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="./css/live2d.css">
-    <link rel="stylesheet" type="text/css" href="./icomoon/icomoon.css">
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -12,14 +11,26 @@
 <!-- Start live2d -->
 
 <!-- Start html part -->
+    <style>
+      .live2d-icon > img {
+        width: 12px;
+        height: 12px;
+      }
+    </style>
 <div id="landlord" style="display:none;bottom:300px">
     <div class="message" style="opacity:0"></div>
     <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
     <!-- <div class="hide-button">隐藏</div> -->
     <div class="waifu-tool">
-        <span class="icon-home"></span>
-        <span class="icon-bubble2"></span>
-        <span class="icon-cross"></span>
+        <span class="live2d-icon icon-home">
+          <img src="./img/home.png" alt="home">
+        </span>
+        <span class="live2d-icon icon-bubble2">
+          <img src="./img/bubble.png" alt="chat">
+        </span>
+        <span class="live2d-icon icon-cross">
+          <img src="./img/close.png" alt="close">
+        </span>
     </div>
 </div>
 <!-- End html part -->
